@@ -10,7 +10,7 @@ class Quiz extends Component {
         this.state = {quiz_position: 1};
     }
     render () {
-        const isQuizEnd = (quizData.quiz_questions.length == (quiz_position - 1))? true: false;
+        const isQuizEnd = (quizData.quiz_questions.length == (this.state.quiz_position - 1))? true: false;
             //quizData.quiz_questions.length == (quiz_position - 1) ? isQuizEnd = true: isQUizEnd = false;
         // if (quizData.quiz_questions.length == (quiz_position - 1)){
         //     isQuizEnd = true
